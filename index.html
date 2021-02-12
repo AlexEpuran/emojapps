@@ -1,0 +1,67 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Emoji App</title>
+  </head>
+
+  <body>
+    <form id="name-input" required>
+      <label for="fname">Your Name:</label>
+      <input type="text" id="nameInput" name="fname" required /><br /><br />
+
+      <button type="button" id="name-btn" required>Push Me</button>
+      <button
+        type="button"
+        id="refresh-btn"
+        onclick="window.location.reload();"
+      >
+        Refresh
+      </button>
+    </form>
+    <div class="main">
+      <h1 id="header">Emoji List</h1>
+      <div id="emoji-container" class="emoji-container"></div>
+      <input type="text" id="emoji-input" placeholder="type an emoji 😎" />
+      <div class="btn-container">
+        <button id="push-btn">Add to end</button>
+        <button id="unshift-btn">Add to beginning</button>
+        <button id="pop-btn">Remove from end</button>
+        <button id="shift-btn">Remove from beginning</button>
+        <div class="emoji-source">
+          <p id="footer-para">
+            You can copy & paste Emojis from
+            <a href="https://emojipedia.org/" target="_blank">HERE</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
